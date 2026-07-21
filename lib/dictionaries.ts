@@ -35,7 +35,7 @@ export type Dictionary = {
     kicker: string;
     title: string;
     body: string[];
-    stats: { value: string; label: string }[];
+    stats: { value: string; label: string; logo?: boolean }[];
   };
   skills: {
     kicker: string;
@@ -83,9 +83,8 @@ const ko: Dictionary = {
       "기술이 플레이어의 감정을 만드는 순간을 좋아합니다. 최적화된 렌더링, 매끄러운 손맛, 그리고 디테일한 이펙트로 '느껴지는' 게임을 지향합니다.",
     ],
     stats: [
-      { value: "6+", label: "출시/참여 타이틀" },
-      { value: "8년", label: "개발 경력" },
-      { value: "∞", label: "빌드한 프로토타입" },
+      { value: "1년", label: "경력" },
+      { value: "OWIS", label: "참여한 프로젝트", logo: true },
     ],
   },
   skills: {
@@ -148,7 +147,7 @@ const ko: Dictionary = {
     kicker: "연락",
     title: "함께 만들어요",
     body: "새로운 프로젝트, 협업, 또는 그냥 인사도 좋아요. 편하게 연락 주세요.",
-    email: "helloaurora@auroraworld.com",
+    email: "kh950698@gmail.com",
     cta: "이메일 보내기",
   },
   footer: {
@@ -183,9 +182,8 @@ const en: Dictionary = {
       "I love the moment technology turns into emotion. Optimized rendering, tight game feel, and detailed effects are how I make games that feel alive.",
     ],
     stats: [
-      { value: "6+", label: "Shipped titles" },
-      { value: "8 yrs", label: "Experience" },
-      { value: "∞", label: "Prototypes built" },
+      { value: "1 yr", label: "Experience" },
+      { value: "OWIS", label: "Projects involved", logo: true },
     ],
   },
   skills: {
@@ -248,7 +246,7 @@ const en: Dictionary = {
     kicker: "Contact",
     title: "Let's build together",
     body: "New projects, collaborations, or just a hello — I'd love to hear from you.",
-    email: "helloaurora@auroraworld.com",
+    email: "kh950698@gmail.com",
     cta: "Send an email",
   },
   footer: {
@@ -283,9 +281,8 @@ const ja: Dictionary = {
       "技術がプレイヤーの感情になる瞬間が好きです。最適化されたレンダリング、心地よい操作感、細やかなエフェクトで「生きている」ゲームを目指します。",
     ],
     stats: [
-      { value: "6+", label: "リリースタイトル" },
-      { value: "8年", label: "開発経験" },
-      { value: "∞", label: "作ったプロト" },
+      { value: "1年", label: "経験" },
+      { value: "OWIS", label: "参加プロジェクト", logo: true },
     ],
   },
   skills: {
@@ -348,7 +345,7 @@ const ja: Dictionary = {
     kicker: "連絡",
     title: "一緒に作りましょう",
     body: "新しいプロジェクト、コラボ、ただの挨拶でも大歓迎です。お気軽にご連絡ください。",
-    email: "helloaurora@auroraworld.com",
+    email: "kh950698@gmail.com",
     cta: "メールを送る",
   },
   footer: {
@@ -383,9 +380,8 @@ const zh: Dictionary = {
       "我喜欢技术化为情感的瞬间。通过优化的渲染、扎实的手感和细腻的特效，做出「有生命力」的游戏。",
     ],
     stats: [
-      { value: "6+", label: "已发布作品" },
-      { value: "8年", label: "开发经验" },
-      { value: "∞", label: "原型数量" },
+      { value: "1年", label: "经验" },
+      { value: "OWIS", label: "参与项目", logo: true },
     ],
   },
   skills: {
@@ -448,7 +444,7 @@ const zh: Dictionary = {
     kicker: "联系",
     title: "一起创造吧",
     body: "新项目、合作，或者只是打个招呼——都欢迎随时联系我。",
-    email: "helloaurora@auroraworld.com",
+    email: "kh950698@gmail.com",
     cta: "发送邮件",
   },
   footer: {

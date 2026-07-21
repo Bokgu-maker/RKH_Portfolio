@@ -97,6 +97,17 @@ a {
   letter-spacing: -0.01em;
 }
 
+/* OWIS logo mark used in place of a stat value.
+   align-self prevents the column flex from stretching it wide;
+   width:auto + object-fit keep the native aspect ratio. */
+.about__stat-logo {
+  display: block;
+  height: 2.4rem;
+  width: auto;
+  align-self: flex-start;
+  object-fit: contain;
+}
+
 .text-gradient {
   background: linear-gradient(92deg, #c084fc 0%, #e879f9 45%, #f472b6 100%);
   -webkit-background-clip: text;

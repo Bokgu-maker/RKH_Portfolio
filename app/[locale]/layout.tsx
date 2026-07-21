@@ -33,7 +33,7 @@ export async function generateMetadata({
   return {
     title: dict.meta.title,
     description: dict.meta.description,
-    metadataBase: new URL("https://aurora-portfolio.vercel.app"),
+    metadataBase: new URL("https://kh-portfolio-2026.vercel.app"),
     openGraph: {
       title: dict.meta.title,
       description: dict.meta.description,
