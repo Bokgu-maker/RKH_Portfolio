@@ -33,7 +33,7 @@ export default function Nav({ locale, nav }: Props) {
       <div className="container-x nav__inner">
         <Link href={`/${locale}`} className="nav__brand font-display">
           <span className="nav__brand-dot" />
-          Aurora
+          Roh
         </Link>
 
         <nav className={`nav__links ${open ? "is-open" : ""}`}>

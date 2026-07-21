@@ -2,7 +2,7 @@ import "server-only";
 import type { Locale } from "./i18n";
 
 /* ============================================================
-   Content dictionaries for the Aurora game-dev portfolio.
+   Content dictionaries for the Roh game-dev portfolio.
    All example copy — swap the strings for your real profile.
    ============================================================ */
 
@@ -59,15 +59,15 @@ export type Dictionary = {
 
 const ko: Dictionary = {
   meta: {
-    title: "Aurora — 게임 개발자 포트폴리오",
+    title: "Roh — 게임 개발자 포트폴리오",
     description:
-      "인터랙티브 경험과 실시간 그래픽을 만드는 게임 개발자 Aurora의 포트폴리오.",
+      "인터랙티브 경험과 실시간 그래픽을 만드는 게임 개발자 Roh의 포트폴리오.",
   },
   nav: { about: "소개", skills: "역량", work: "프로젝트", contact: "연락" },
   hero: {
     badge: "게임 개발자 · 실시간 그래픽",
     lead: "안녕하세요, 저는",
-    name: "Aurora",
+    name: "Roh",
     role: "게임 개발자 & 테크니컬 아티스트",
     tagline:
       "엔진, 셰이더, 그리고 플레이어가 오래 기억하는 순간을 만듭니다. 코드와 아트의 경계에서 작업합니다.",
@@ -91,10 +91,9 @@ const ko: Dictionary = {
     kicker: "역량",
     title: "다루는 기술",
     groups: [
-      { name: "엔진 & 언어", items: ["Unity", "Unreal Engine", "C#", "C++", "Rust"] },
-      { name: "그래픽", items: ["HLSL / GLSL", "Shader Graph", "URP / HDRP", "Compute", "VFX Graph"] },
-      { name: "툴 & 웹", items: ["TypeScript", "React", "Next.js", "WebGL", "Three.js"] },
-      { name: "워크플로", items: ["Git", "CI/CD", "Perforce", "Profiling", "Live Ops"] },
+      { name: "엔진", items: ["Unreal Engine"] },
+      { name: "프로그램", items: ["MAYA", "ZBrush", "Nuke", "PhotoShop", "Substance Paint", "Premiere Pro", "After Effect"] },
+      { name: "AI", items: ["Claude", "Codex"] },
     ],
   },
   work: {
@@ -133,7 +132,7 @@ const ko: Dictionary = {
       },
       {
         slug: "aurora-webgl",
-        title: "Aurora WebGL Demo",
+        title: "Roh WebGL Demo",
         role: "1인 개발",
         year: "2023",
         tags: ["Three.js", "WebGL", "GLSL"],
@@ -158,15 +157,15 @@ const ko: Dictionary = {
 
 const en: Dictionary = {
   meta: {
-    title: "Aurora — Game Developer Portfolio",
+    title: "Roh — Game Developer Portfolio",
     description:
-      "Portfolio of Aurora, a game developer crafting interactive experiences and real-time graphics.",
+      "Portfolio of Roh, a game developer crafting interactive experiences and real-time graphics.",
   },
   nav: { about: "About", skills: "Skills", work: "Work", contact: "Contact" },
   hero: {
     badge: "Game Developer · Real-time Graphics",
     lead: "Hi, I'm",
-    name: "Aurora",
+    name: "Roh",
     role: "Game Developer & Technical Artist",
     tagline:
       "I build engines, shaders, and the moments players remember. Working right where code meets art.",
@@ -190,10 +189,9 @@ const en: Dictionary = {
     kicker: "Skills",
     title: "What I work with",
     groups: [
-      { name: "Engines & Languages", items: ["Unity", "Unreal Engine", "C#", "C++", "Rust"] },
-      { name: "Graphics", items: ["HLSL / GLSL", "Shader Graph", "URP / HDRP", "Compute", "VFX Graph"] },
-      { name: "Tools & Web", items: ["TypeScript", "React", "Next.js", "WebGL", "Three.js"] },
-      { name: "Workflow", items: ["Git", "CI/CD", "Perforce", "Profiling", "Live Ops"] },
+      { name: "Engine", items: ["Unreal Engine"] },
+      { name: "Programs", items: ["MAYA", "ZBrush", "Nuke", "PhotoShop", "Substance Paint", "Premiere Pro", "After Effect"] },
+      { name: "AI", items: ["Claude", "Codex"] },
     ],
   },
   work: {
@@ -232,7 +230,7 @@ const en: Dictionary = {
       },
       {
         slug: "aurora-webgl",
-        title: "Aurora WebGL Demo",
+        title: "Roh WebGL Demo",
         role: "Solo Developer",
         year: "2023",
         tags: ["Three.js", "WebGL", "GLSL"],
@@ -257,15 +255,15 @@ const en: Dictionary = {
 
 const ja: Dictionary = {
   meta: {
-    title: "Aurora — ゲーム開発者ポートフォリオ",
+    title: "Roh — ゲーム開発者ポートフォリオ",
     description:
-      "インタラクティブ体験とリアルタイムグラフィックスを作るゲーム開発者 Aurora のポートフォリオ。",
+      "インタラクティブ体験とリアルタイムグラフィックスを作るゲーム開発者 Roh のポートフォリオ。",
   },
   nav: { about: "紹介", skills: "スキル", work: "作品", contact: "連絡" },
   hero: {
     badge: "ゲーム開発者 · リアルタイムグラフィックス",
     lead: "こんにちは、",
-    name: "Aurora",
+    name: "Roh",
     role: "ゲーム開発者 & テクニカルアーティスト",
     tagline:
       "エンジン、シェーダー、そしてプレイヤーの記憶に残る瞬間を作ります。コードとアートの境界で働いています。",
@@ -289,10 +287,9 @@ const ja: Dictionary = {
     kicker: "スキル",
     title: "扱う技術",
     groups: [
-      { name: "エンジン & 言語", items: ["Unity", "Unreal Engine", "C#", "C++", "Rust"] },
-      { name: "グラフィックス", items: ["HLSL / GLSL", "Shader Graph", "URP / HDRP", "Compute", "VFX Graph"] },
-      { name: "ツール & Web", items: ["TypeScript", "React", "Next.js", "WebGL", "Three.js"] },
-      { name: "ワークフロー", items: ["Git", "CI/CD", "Perforce", "Profiling", "Live Ops"] },
+      { name: "エンジン", items: ["Unreal Engine"] },
+      { name: "プログラム", items: ["MAYA", "ZBrush", "Nuke", "PhotoShop", "Substance Paint", "Premiere Pro", "After Effect"] },
+      { name: "AI", items: ["Claude", "Codex"] },
     ],
   },
   work: {
@@ -331,7 +328,7 @@ const ja: Dictionary = {
       },
       {
         slug: "aurora-webgl",
-        title: "Aurora WebGL Demo",
+        title: "Roh WebGL Demo",
         role: "個人開発",
         year: "2023",
         tags: ["Three.js", "WebGL", "GLSL"],
@@ -356,15 +353,15 @@ const ja: Dictionary = {
 
 const zh: Dictionary = {
   meta: {
-    title: "Aurora — 游戏开发者作品集",
+    title: "Roh — 游戏开发者作品集",
     description:
-      "游戏开发者 Aurora 的作品集，专注于交互体验与实时图形。",
+      "游戏开发者 Roh 的作品集，专注于交互体验与实时图形。",
   },
   nav: { about: "关于", skills: "技能", work: "作品", contact: "联系" },
   hero: {
     badge: "游戏开发者 · 实时图形",
     lead: "你好，我是",
-    name: "Aurora",
+    name: "Roh",
     role: "游戏开发者 & 技术美术",
     tagline:
       "我构建引擎、着色器，以及玩家会记住的瞬间。工作在代码与艺术的交界处。",
@@ -388,10 +385,9 @@ const zh: Dictionary = {
     kicker: "技能",
     title: "我使用的技术",
     groups: [
-      { name: "引擎 & 语言", items: ["Unity", "Unreal Engine", "C#", "C++", "Rust"] },
-      { name: "图形", items: ["HLSL / GLSL", "Shader Graph", "URP / HDRP", "Compute", "VFX Graph"] },
-      { name: "工具 & Web", items: ["TypeScript", "React", "Next.js", "WebGL", "Three.js"] },
-      { name: "工作流", items: ["Git", "CI/CD", "Perforce", "Profiling", "Live Ops"] },
+      { name: "引擎", items: ["Unreal Engine"] },
+      { name: "程序", items: ["MAYA", "ZBrush", "Nuke", "PhotoShop", "Substance Paint", "Premiere Pro", "After Effect"] },
+      { name: "AI", items: ["Claude", "Codex"] },
     ],
   },
   work: {
@@ -430,7 +426,7 @@ const zh: Dictionary = {
       },
       {
         slug: "aurora-webgl",
-        title: "Aurora WebGL Demo",
+        title: "Roh WebGL Demo",
         role: "独立开发",
         year: "2023",
         tags: ["Three.js", "WebGL", "GLSL"],
