@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(winget install --id OpenJS.NodeJS.LTS -e --scope user --accept-source-agreements --accept-package-agreements --disable-interactivity)",
+      "PowerShell(winget install --id Git.Git -e --scope user --accept-source-agreements --accept-package-agreements --disable-interactivity)",
+      "PowerShell(\"--- next.config ---\")",
+      "PowerShell(\"--- postcss ---\")",
+      "PowerShell(\"--- public ---\")",
+      "Bash(ls -la \"C:/Users/user/.claude/projects/z--RND-RKH-Port/\" 2>/dev/null; echo \"---\"; ls -la \"C:/Users/user/.claude/projects/\" 2>/dev/null)",
+      "Read(//c/Users/user/.claude/projects/**)"
+    ]
+  }
+}
