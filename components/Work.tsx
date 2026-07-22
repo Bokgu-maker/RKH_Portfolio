@@ -32,6 +32,16 @@ export default function Work({ work }: { work: Dictionary["work"] }) {
                 <span className="work__play" aria-hidden="true" />
                 <span className="work__year">{p.year}</span>
               </div>
+            ) : p.image ? (
+              <div className="work__thumb work__thumb--image">
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  className="work__thumb-img"
+                  loading="lazy"
+                />
+                <span className="work__year">{p.year}</span>
+              </div>
             ) : (
               <div
                 className="work__thumb"

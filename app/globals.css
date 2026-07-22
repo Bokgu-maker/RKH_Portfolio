@@ -630,7 +630,8 @@ a {
 }
 
 /* YouTube video thumbnails */
-.work__thumb--video {
+.work__thumb--video,
+.work__thumb--image {
   padding: 0;
   overflow: hidden;
 }

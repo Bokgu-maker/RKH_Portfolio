@@ -18,6 +18,8 @@ export type Project = {
   href?: string;
   /* when set, the card shows this YouTube video's thumbnail and links to it */
   youtubeId?: string;
+  /* when set (and no youtubeId), the card shows this static image as its thumbnail */
+  image?: string;
 };
 
 export type Dictionary = {
@@ -203,6 +205,7 @@ const ko: Dictionary = {
       },
       {
         slug: "owis-1st-album",
+        image: "/work/owis-1st-album.jpg",
         title: "OWIS 1집 앨범",
         role: "앨범 비주얼",
         year: "2026",
@@ -370,6 +373,7 @@ const en: Dictionary = {
       },
       {
         slug: "owis-1st-album",
+        image: "/work/owis-1st-album.jpg",
         title: "OWIS 1st Album",
         role: "Album Visual",
         year: "2026",
@@ -536,6 +540,7 @@ const ja: Dictionary = {
       },
       {
         slug: "owis-1st-album",
+        image: "/work/owis-1st-album.jpg",
         title: "OWIS 1stアルバム",
         role: "アルバムビジュアル",
         year: "2026",
@@ -702,6 +707,7 @@ const zh: Dictionary = {
       },
       {
         slug: "owis-1st-album",
+        image: "/work/owis-1st-album.jpg",
         title: "OWIS 首张专辑",
         role: "专辑视觉",
         year: "2026",
