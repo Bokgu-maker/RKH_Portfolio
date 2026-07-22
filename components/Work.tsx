@@ -17,17 +17,36 @@ export default function Work({ work }: { work: Dictionary["work"] }) {
 
         <div className="work__grid">
           {work.projects.map((p) => {
+            const href =
+              p.href ??
+              (p.youtubeId ? `https://youtu.be/${p.youtubeId}` : undefined);
+
+            const thumb = p.youtubeId ? (
+              <div className="work__thumb work__thumb--video">
+                <img
+                  src={`/work/${p.youtubeId}.jpg`}
+                  alt={p.title}
+                  className="work__thumb-img"
+                  loading="lazy"
+                />
+                <span className="work__play" aria-hidden="true" />
+                <span className="work__year">{p.year}</span>
+              </div>
+            ) : (
+              <div
+                className="work__thumb"
+                style={{ background: ACCENTS[p.accent] }}
+              >
+                <span className="work__initial font-display">
+                  {p.title.charAt(0)}
+                </span>
+                <span className="work__year">{p.year}</span>
+              </div>
+            );
+
             const card = (
               <>
-                <div
-                  className="work__thumb"
-                  style={{ background: ACCENTS[p.accent] }}
-                >
-                  <span className="work__initial font-display">
-                    {p.title.charAt(0)}
-                  </span>
-                  <span className="work__year">{p.year}</span>
-                </div>
+                {thumb}
                 <div className="work__info">
                   <h3 className="work__title font-display">{p.title}</h3>
                   <p className="work__role">{p.role}</p>
@@ -43,10 +62,10 @@ export default function Work({ work }: { work: Dictionary["work"] }) {
               </>
             );
 
-            return p.href ? (
+            return href ? (
               <a
                 key={p.slug}
-                href={p.href}
+                href={href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="card work__card work__card--link"
