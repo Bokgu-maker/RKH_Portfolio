@@ -100,7 +100,7 @@ const ko: Dictionary = {
   },
   work: {
     kicker: "프로젝트",
-    title: "선별한 작업물",
+    title: "참여한 작업물",
     projects: [
       {
         slug: "owis-museum-mv",
@@ -248,7 +248,7 @@ const en: Dictionary = {
   },
   work: {
     kicker: "Work",
-    title: "Selected projects",
+    title: "Projects I worked on",
     projects: [
       {
         slug: "owis-museum-mv",
@@ -397,7 +397,7 @@ const ja: Dictionary = {
   },
   work: {
     kicker: "作品",
-    title: "選りすぐりの作品",
+    title: "参加した作品",
     projects: [
       {
         slug: "owis-museum-mv",
@@ -545,7 +545,7 @@ const zh: Dictionary = {
   },
   work: {
     kicker: "作品",
-    title: "精选项目",
+    title: "参与的项目",
     projects: [
       {
         slug: "owis-museum-mv",
