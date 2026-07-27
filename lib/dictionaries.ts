@@ -105,6 +105,16 @@ const ko: Dictionary = {
     title: "참여한 작업물",
     projects: [
       {
+        slug: "owis-1st-album",
+        image: "/work/owis-1st-album.jpg",
+        title: "OWIS 1집 앨범",
+        role: "앨범 비주얼",
+        year: "2026",
+        tags: ["OFFER", "Unreal", "Motive", "MotionBuilder", "촬영", "수정", "Rendering", "LookDev", "Lighting"],
+        description: "OWIS 1집 앨범 비주얼 작업.",
+        accent: 3,
+      },
+      {
         slug: "owis-museum-mv",
         youtubeId: "J7OhGsGbaM4",
         title: "OWIS 'MUSEUM' MV",
@@ -203,16 +213,6 @@ const ko: Dictionary = {
         description: "OWIS 라이브 무대 비주얼 작업.",
         accent: 1,
       },
-      {
-        slug: "owis-1st-album",
-        image: "/work/owis-1st-album.jpg",
-        title: "OWIS 1집 앨범",
-        role: "앨범 비주얼",
-        year: "2026",
-        tags: ["OFFER", "Unreal", "Motive", "MotionBuilder", "촬영", "수정", "Rendering", "LookDev", "Lighting"],
-        description: "OWIS 1집 앨범 비주얼 작업.",
-        accent: 3,
-      },
     ],
   },
   contact: {
@@ -271,6 +271,16 @@ const en: Dictionary = {
     kicker: "Work",
     title: "Projects I worked on",
     projects: [
+      {
+        slug: "owis-1st-album",
+        image: "/work/owis-1st-album.jpg",
+        title: "OWIS 1st Album",
+        role: "Album Visual",
+        year: "2026",
+        tags: ["OFFER", "Unreal", "Motive", "MotionBuilder", "Filming", "Revision", "Rendering", "LookDev", "Lighting"],
+        description: "Visual work for OWIS's 1st album.",
+        accent: 3,
+      },
       {
         slug: "owis-museum-mv",
         youtubeId: "J7OhGsGbaM4",
@@ -371,16 +381,6 @@ const en: Dictionary = {
         description: "Live stage visuals for OWIS.",
         accent: 1,
       },
-      {
-        slug: "owis-1st-album",
-        image: "/work/owis-1st-album.jpg",
-        title: "OWIS 1st Album",
-        role: "Album Visual",
-        year: "2026",
-        tags: ["OFFER", "Unreal", "Motive", "MotionBuilder", "Filming", "Revision", "Rendering", "LookDev", "Lighting"],
-        description: "Visual work for OWIS's 1st album.",
-        accent: 3,
-      },
     ],
   },
   contact: {
@@ -439,6 +439,16 @@ const ja: Dictionary = {
     kicker: "作品",
     title: "参加した作品",
     projects: [
+      {
+        slug: "owis-1st-album",
+        image: "/work/owis-1st-album.jpg",
+        title: "OWIS 1stアルバム",
+        role: "アルバムビジュアル",
+        year: "2026",
+        tags: ["OFFER", "Unreal", "Motive", "MotionBuilder", "撮影", "修正", "Rendering", "LookDev", "Lighting"],
+        description: "OWIS 1stアルバムのビジュアル制作。",
+        accent: 3,
+      },
       {
         slug: "owis-museum-mv",
         youtubeId: "J7OhGsGbaM4",
@@ -538,16 +548,6 @@ const ja: Dictionary = {
         description: "OWIS ライブ舞台ビジュアル制作。",
         accent: 1,
       },
-      {
-        slug: "owis-1st-album",
-        image: "/work/owis-1st-album.jpg",
-        title: "OWIS 1stアルバム",
-        role: "アルバムビジュアル",
-        year: "2026",
-        tags: ["OFFER", "Unreal", "Motive", "MotionBuilder", "撮影", "修正", "Rendering", "LookDev", "Lighting"],
-        description: "OWIS 1stアルバムのビジュアル制作。",
-        accent: 3,
-      },
     ],
   },
   contact: {
@@ -606,6 +606,16 @@ const zh: Dictionary = {
     kicker: "作品",
     title: "参与的项目",
     projects: [
+      {
+        slug: "owis-1st-album",
+        image: "/work/owis-1st-album.jpg",
+        title: "OWIS 首张专辑",
+        role: "专辑视觉",
+        year: "2026",
+        tags: ["OFFER", "Unreal", "Motive", "MotionBuilder", "拍摄", "修改", "Rendering", "LookDev", "Lighting"],
+        description: "OWIS 首张专辑视觉制作。",
+        accent: 3,
+      },
       {
         slug: "owis-museum-mv",
         youtubeId: "J7OhGsGbaM4",
@@ -704,16 +714,6 @@ const zh: Dictionary = {
         tags: ["OFFER", "Unreal", "Motive", "MotionBuilder"],
         description: "OWIS 现场舞台视觉制作。",
         accent: 1,
-      },
-      {
-        slug: "owis-1st-album",
-        image: "/work/owis-1st-album.jpg",
-        title: "OWIS 首张专辑",
-        role: "专辑视觉",
-        year: "2026",
-        tags: ["OFFER", "Unreal", "Motive", "MotionBuilder", "拍摄", "修改", "Rendering", "LookDev", "Lighting"],
-        description: "OWIS 首张专辑视觉制作。",
-        accent: 3,
       },
     ],
   },
