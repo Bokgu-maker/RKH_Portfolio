@@ -81,10 +81,10 @@ const ko: Dictionary = {
   },
   about: {
     kicker: "소개",
-    title: "코드로 세계를 짓는 사람",
+    title: "빛과 움직임으로 무대를 빚는 사람",
     body: [
-      "저는 실시간 인터랙티브 경험을 만드는 게임 개발자입니다. 게임플레이 프로그래밍부터 셰이더, 툴 개발까지 파이프라인 전반을 넘나들며 작업합니다.",
-      "기술이 플레이어의 감정을 만드는 순간을 좋아합니다. 최적화된 렌더링, 매끄러운 손맛, 그리고 디테일한 이펙트로 '느껴지는' 게임을 지향합니다.",
+      "저는 3D 파이프라인 전반을 넘나드는 제너럴리스트입니다. 모델링·스컬핑·텍스처링부터 룩뎁·라이팅·렌더링까지, Unreal Engine과 모션캡처(Motive·MotionBuilder)를 활용해 아이디어를 하나의 완성된 장면으로 완성합니다.",
+      "기술이 감정이 되는 순간을 좋아합니다. 실시간 렌더링과 정교한 라이팅, 디테일한 룩으로 '진짜처럼 느껴지는' 비주얼을 지향합니다. 뮤직비디오부터 라이브 무대·퍼포먼스 영상까지, 보는 사람의 기억에 오래 남을 한 장면을 만듭니다.",
     ],
     stats: [
       { value: "1년", label: "경력" },
@@ -248,10 +248,10 @@ const en: Dictionary = {
   },
   about: {
     kicker: "About",
-    title: "Building worlds out of code",
+    title: "Shaping the stage with light and motion",
     body: [
-      "I'm a game developer creating real-time interactive experiences. I move across the whole pipeline — from gameplay programming to shaders and tooling.",
-      "I love the moment technology turns into emotion. Optimized rendering, tight game feel, and detailed effects are how I make games that feel alive.",
+      "I'm a generalist who works across the entire 3D pipeline. From modeling, sculpting, and texturing to lookdev, lighting, and rendering, I turn ideas into finished scenes with Unreal Engine and motion capture (Motive, MotionBuilder).",
+      "I love the moment technology turns into emotion. With real-time rendering, refined lighting, and detailed looks, I aim for visuals that feel real. From music videos to live stages and performance films, I create scenes that stay in the viewer's memory.",
     ],
     stats: [
       { value: "1 yr", label: "Experience" },
@@ -416,10 +416,10 @@ const ja: Dictionary = {
   },
   about: {
     kicker: "紹介",
-    title: "コードで世界を築く",
+    title: "光と動きで舞台をかたちづくる",
     body: [
-      "リアルタイムのインタラクティブ体験を作るゲーム開発者です。ゲームプレイのプログラミングからシェーダー、ツール開発までパイプライン全体を横断して作業します。",
-      "技術がプレイヤーの感情になる瞬間が好きです。最適化されたレンダリング、心地よい操作感、細やかなエフェクトで「生きている」ゲームを目指します。",
+      "私は3Dパイプライン全体を横断するゼネラリストです。モデリング・スカルプト・テクスチャリングからルックデブ・ライティング・レンダリングまで、Unreal Engineとモーションキャプチャ（Motive・MotionBuilder）を使い、アイデアを一つの完成されたシーンに仕上げます。",
+      "技術が感情になる瞬間が好きです。リアルタイムレンダリングと繊細なライティング、細部までこだわったルックで「本物のように感じられる」ビジュアルを目指します。ミュージックビデオからライブステージ・パフォーマンス映像まで、観る人の記憶に長く残る一場面を作ります。",
     ],
     stats: [
       { value: "1年", label: "経験" },
@@ -583,10 +583,10 @@ const zh: Dictionary = {
   },
   about: {
     kicker: "关于",
-    title: "用代码构建世界",
+    title: "以光与动态塑造舞台",
     body: [
-      "我是一名打造实时交互体验的游戏开发者，工作贯穿整个管线——从玩法编程到着色器和工具开发。",
-      "我喜欢技术化为情感的瞬间。通过优化的渲染、扎实的手感和细腻的特效，做出「有生命力」的游戏。",
+      "我是一名贯穿整个 3D 管线的通才。从建模、雕刻、贴图到 LookDev、灯光与渲染，我用 Unreal Engine 和动作捕捉（Motive、MotionBuilder）把创意打造成一个完整的画面。",
+      "我喜欢技术化为情感的瞬间。通过实时渲染、精细的灯光和讲究的质感，追求「仿佛真实」的视觉。从音乐视频到现场舞台与表演影片，我创作让观众长久记住的画面。",
     ],
     stats: [
       { value: "1年", label: "经验" },
