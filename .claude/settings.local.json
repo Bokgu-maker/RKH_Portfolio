@@ -7,7 +7,18 @@
       "PowerShell(\"--- postcss ---\")",
       "PowerShell(\"--- public ---\")",
       "Bash(ls -la \"C:/Users/user/.claude/projects/z--RND-RKH-Port/\" 2>/dev/null; echo \"---\"; ls -la \"C:/Users/user/.claude/projects/\" 2>/dev/null)",
-      "Read(//c/Users/user/.claude/projects/**)"
+      "Read(//c/Users/user/.claude/projects/**)",
+      "Bash(npm run *)",
+      "Bash(NODE_PATH=__TRACKED_VAR__/node_modules node -e ' *)",
+      "PowerShell($edge = \"C:\\\\Program Files \\(x86\\)\\\\Microsoft\\\\Edge\\\\Application\\\\msedge.exe\"; $out = \"C:\\\\Users\\\\user\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-user-Desktop----------------\\\\669d6faa-ed9c-4f92-b4dd-894a7b0712d2\\\\scratchpad\\\\about.png\"; if \\(Test-Path $out\\) { Remove-Item $out -Force }; & $edge --headless=new --disable-gpu --hide-scrollbars --window-size=1300,1000 --virtual-time-budget=4000 --screenshot=\"$out\" \"http://localhost:3000/ko#about\" 2>$null | Out-Null; Start-Sleep -Seconds 2; if \\(Test-Path $out\\) { \"OK: $\\(\\(Get-Item $out\\).Length\\) bytes\" } else { \"FAILED\" })",
+      "PowerShell($conn = Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue; if \\($conn\\) { $conn.OwningProcess | Select-Object -Unique | ForEach-Object { Stop-Process -Id $_ -Force -ErrorAction SilentlyContinue }; Start-Sleep -Seconds 1; \"freed 3000\" } else { \"3000 free\" })",
+      "Bash(env)",
+      "Read(//c/Users/user/Desktop/경호_개인/**)",
+      "Read(//c/Users/user/**)",
+      "Bash(node -e ' *)",
+      "Bash(rm -f public/work/EZoDlUICsm4.jpg)",
+      "WebFetch(domain:www.youtube.com)",
+      "PowerShell(Set-ItemProperty \"C:\\\\Users\\\\user\\\\Desktop\\\\Main\\\\OWIS.uproject\" -Name IsReadOnly -Value $false; \\(Get-Item \"C:\\\\Users\\\\user\\\\Desktop\\\\Main\\\\OWIS.uproject\"\\).Attributes)"
     ]
   }
 }
