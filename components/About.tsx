@@ -18,7 +18,7 @@ export default function About({ about }: { about: Dictionary["about"] }) {
               <div key={s.label} className="card about__stat">
                 {s.logo ? (
                   <img
-                    src="/owis.png"
+                    src="/OWIS_Logo_White.png"
                     alt={s.value}
                     className="about__stat-logo"
                     width={595}
