@@ -20,6 +20,8 @@ export type Project = {
   youtubeId?: string;
   /* when set (and no youtubeId), the card shows this static image as its thumbnail */
   image?: string;
+  /* when set, groups this card under a subheading below the main work grid */
+  category?: string;
 };
 
 export type Dictionary = {
@@ -213,6 +215,28 @@ const ko: Dictionary = {
         description: "OWIS 라이브 무대 비주얼 작업.",
         accent: 1,
       },
+      {
+        slug: "unreal-reel",
+        youtubeId: "0uxPugKUlJs",
+        title: "언리얼 포트폴리오 릴",
+        role: "실시간 렌더링·라이팅 데모",
+        year: "2026",
+        tags: ["Unreal", "Rendering", "LookDev", "Lighting"],
+        description: "Unreal Engine 기반 실시간 렌더링·라이팅 포트폴리오 릴.",
+        accent: 2,
+        category: "제작 영상",
+      },
+      {
+        slug: "maya-reel",
+        youtubeId: "NrQ3rQv-RlE",
+        title: "마야 포트폴리오 릴",
+        role: "모델링·스컬핑·텍스처링 데모",
+        year: "2026",
+        tags: ["MAYA", "ZBrush", "Substance Paint"],
+        description: "MAYA 기반 모델링·스컬핑·텍스처링 포트폴리오 릴.",
+        accent: 0,
+        category: "제작 영상",
+      },
     ],
   },
   contact: {
@@ -381,6 +405,30 @@ const en: Dictionary = {
         description: "Live stage visuals for OWIS.",
         accent: 1,
       },
+      {
+        slug: "unreal-reel",
+        youtubeId: "0uxPugKUlJs",
+        title: "Unreal Portfolio Reel",
+        role: "Real-time Rendering & Lighting Demo",
+        year: "2026",
+        tags: ["Unreal", "Rendering", "LookDev", "Lighting"],
+        description:
+          "Real-time rendering and lighting portfolio reel made with Unreal Engine.",
+        accent: 2,
+        category: "Making-of",
+      },
+      {
+        slug: "maya-reel",
+        youtubeId: "NrQ3rQv-RlE",
+        title: "Maya Portfolio Reel",
+        role: "Modeling, Sculpting & Texturing Demo",
+        year: "2026",
+        tags: ["MAYA", "ZBrush", "Substance Paint"],
+        description:
+          "Modeling, sculpting, and texturing portfolio reel made with MAYA.",
+        accent: 0,
+        category: "Making-of",
+      },
     ],
   },
   contact: {
@@ -548,6 +596,30 @@ const ja: Dictionary = {
         description: "OWIS ライブ舞台ビジュアル制作。",
         accent: 1,
       },
+      {
+        slug: "unreal-reel",
+        youtubeId: "0uxPugKUlJs",
+        title: "アンリアル ポートフォリオリール",
+        role: "リアルタイムレンダリング・ライティングデモ",
+        year: "2026",
+        tags: ["Unreal", "Rendering", "LookDev", "Lighting"],
+        description:
+          "Unreal Engineによるリアルタイムレンダリング・ライティングのポートフォリオリール。",
+        accent: 2,
+        category: "制作映像",
+      },
+      {
+        slug: "maya-reel",
+        youtubeId: "NrQ3rQv-RlE",
+        title: "マヤ ポートフォリオリール",
+        role: "モデリング・スカルプト・テクスチャリングデモ",
+        year: "2026",
+        tags: ["MAYA", "ZBrush", "Substance Paint"],
+        description:
+          "MAYAによるモデリング・スカルプト・テクスチャリングのポートフォリオリール。",
+        accent: 0,
+        category: "制作映像",
+      },
     ],
   },
   contact: {
@@ -714,6 +786,28 @@ const zh: Dictionary = {
         tags: ["OFFER", "Unreal", "Motive", "MotionBuilder"],
         description: "OWIS 现场舞台视觉制作。",
         accent: 1,
+      },
+      {
+        slug: "unreal-reel",
+        youtubeId: "0uxPugKUlJs",
+        title: "虚幻引擎作品集短片",
+        role: "实时渲染与灯光演示",
+        year: "2026",
+        tags: ["Unreal", "Rendering", "LookDev", "Lighting"],
+        description: "使用 Unreal Engine 制作的实时渲染与灯光作品集短片。",
+        accent: 2,
+        category: "制作花絮",
+      },
+      {
+        slug: "maya-reel",
+        youtubeId: "NrQ3rQv-RlE",
+        title: "Maya 作品集短片",
+        role: "建模·雕刻·贴图演示",
+        year: "2026",
+        tags: ["MAYA", "ZBrush", "Substance Paint"],
+        description: "使用 MAYA 制作的建模、雕刻与贴图作品集短片。",
+        accent: 0,
+        category: "制作花絮",
       },
     ],
   },

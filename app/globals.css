@@ -711,6 +711,14 @@ a {
   flex-wrap: wrap;
   gap: 8px;
 }
+.work__category {
+  margin-top: 48px;
+}
+.work__category-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
 
 /* Contact */
 .contact {
