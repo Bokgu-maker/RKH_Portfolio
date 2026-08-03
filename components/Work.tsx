@@ -1,4 +1,7 @@
-import type { Dictionary, Project } from "@/lib/dictionaries";
+"use client";
+
+import { useState } from "react";
+import type { Dictionary } from "@/lib/dictionaries";
 
 /* Accent gradients keyed by Project.accent */
 const ACCENTS = [
@@ -8,82 +11,17 @@ const ACCENTS = [
   "linear-gradient(135deg, #059669, #22d3ee)",
 ];
 
+/* Projects without an explicit category belong to this default tab */
+const DEFAULT_CATEGORY = "OWIS";
+
 export default function Work({ work }: { work: Dictionary["work"] }) {
-  const mainProjects = work.projects.filter((p) => !p.category);
-  const categorized = work.projects.filter((p) => p.category);
-  const categories = Array.from(new Set(categorized.map((p) => p.category!)));
+  const categories = Array.from(
+    new Set(work.projects.map((p) => p.category ?? DEFAULT_CATEGORY)),
+  );
+  const [active, setActive] = useState(categories[0]);
 
-  const renderProjects = (projects: Project[]) => (
-    <div className="work__grid">
-      {projects.map((p) => {
-        const href =
-          p.href ?? (p.youtubeId ? `https://youtu.be/${p.youtubeId}` : undefined);
-
-        const thumb = p.youtubeId ? (
-          <div className="work__thumb work__thumb--video">
-            <img
-              src={`/work/${p.youtubeId}.jpg`}
-              alt={p.title}
-              className="work__thumb-img"
-              loading="lazy"
-            />
-            <span className="work__play" aria-hidden="true" />
-            <span className="work__year">{p.year}</span>
-          </div>
-        ) : p.image ? (
-          <div className="work__thumb work__thumb--image">
-            <img
-              src={p.image}
-              alt={p.title}
-              className="work__thumb-img"
-              loading="lazy"
-            />
-            <span className="work__year">{p.year}</span>
-          </div>
-        ) : (
-          <div className="work__thumb" style={{ background: ACCENTS[p.accent] }}>
-            <span className="work__initial font-display">
-              {p.title.charAt(0)}
-            </span>
-            <span className="work__year">{p.year}</span>
-          </div>
-        );
-
-        const card = (
-          <>
-            {thumb}
-            <div className="work__info">
-              <h3 className="work__title font-display">{p.title}</h3>
-              <p className="work__role">{p.role}</p>
-              <p className="work__desc">{p.description}</p>
-              <div className="work__tags">
-                {p.tags.map((t) => (
-                  <span key={t} className="chip">
-                    {t}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </>
-        );
-
-        return href ? (
-          <a
-            key={p.slug}
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card work__card work__card--link"
-          >
-            {card}
-          </a>
-        ) : (
-          <article key={p.slug} className="card work__card">
-            {card}
-          </article>
-        );
-      })}
-    </div>
+  const visibleProjects = work.projects.filter(
+    (p) => (p.category ?? DEFAULT_CATEGORY) === active,
   );
 
   return (
@@ -92,14 +30,95 @@ export default function Work({ work }: { work: Dictionary["work"] }) {
         <p className="kicker">{work.kicker}</p>
         <h2 className="section-title font-display">{work.title}</h2>
 
-        {renderProjects(mainProjects)}
+        <div className="work__tabs" role="tablist">
+          {categories.map((category) => (
+            <button
+              key={category}
+              type="button"
+              role="tab"
+              aria-selected={category === active}
+              className={
+                category === active
+                  ? "work__tab work__tab--active"
+                  : "work__tab"
+              }
+              onClick={() => setActive(category)}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
 
-        {categories.map((category) => (
-          <div key={category} className="work__category">
-            <h3 className="work__category-title font-display">{category}</h3>
-            {renderProjects(categorized.filter((p) => p.category === category))}
-          </div>
-        ))}
+        <div className="work__grid">
+          {visibleProjects.map((p) => {
+            const href =
+              p.href ?? (p.youtubeId ? `https://youtu.be/${p.youtubeId}` : undefined);
+
+            const thumb = p.youtubeId ? (
+              <div className="work__thumb work__thumb--video">
+                <img
+                  src={`/work/${p.youtubeId}.jpg`}
+                  alt={p.title}
+                  className="work__thumb-img"
+                  loading="lazy"
+                />
+                <span className="work__play" aria-hidden="true" />
+                <span className="work__year">{p.year}</span>
+              </div>
+            ) : p.image ? (
+              <div className="work__thumb work__thumb--image">
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  className="work__thumb-img"
+                  loading="lazy"
+                />
+                <span className="work__year">{p.year}</span>
+              </div>
+            ) : (
+              <div className="work__thumb" style={{ background: ACCENTS[p.accent] }}>
+                <span className="work__initial font-display">
+                  {p.title.charAt(0)}
+                </span>
+                <span className="work__year">{p.year}</span>
+              </div>
+            );
+
+            const card = (
+              <>
+                {thumb}
+                <div className="work__info">
+                  <h3 className="work__title font-display">{p.title}</h3>
+                  <p className="work__role">{p.role}</p>
+                  <p className="work__desc">{p.description}</p>
+                  <div className="work__tags">
+                    {p.tags.map((t) => (
+                      <span key={t} className="chip">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </>
+            );
+
+            return href ? (
+              <a
+                key={p.slug}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="card work__card work__card--link"
+              >
+                {card}
+              </a>
+            ) : (
+              <article key={p.slug} className="card work__card">
+                {card}
+              </article>
+            );
+          })}
+        </div>
       </div>
     </section>
   );
