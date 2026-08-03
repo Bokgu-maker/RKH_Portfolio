@@ -214,6 +214,7 @@ const ko: Dictionary = {
         tags: ["OFFER", "Unreal", "Motive", "MotionBuilder"],
         description: "OWIS 라이브 무대 비주얼 작업.",
         accent: 1,
+        category: "Live",
       },
       {
         slug: "unreal-reel",
@@ -404,6 +405,7 @@ const en: Dictionary = {
         tags: ["OFFER", "Unreal", "Motive", "MotionBuilder"],
         description: "Live stage visuals for OWIS.",
         accent: 1,
+        category: "Live",
       },
       {
         slug: "unreal-reel",
@@ -594,6 +596,7 @@ const ja: Dictionary = {
         tags: ["OFFER", "Unreal", "Motive", "MotionBuilder"],
         description: "OWIS ライブ舞台ビジュアル制作。",
         accent: 1,
+        category: "Live",
       },
       {
         slug: "unreal-reel",
@@ -783,6 +786,7 @@ const zh: Dictionary = {
         tags: ["OFFER", "Unreal", "Motive", "MotionBuilder"],
         description: "OWIS 现场舞台视觉制作。",
         accent: 1,
+        category: "Live",
       },
       {
         slug: "unreal-reel",
